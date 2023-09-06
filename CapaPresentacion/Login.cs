@@ -20,11 +20,15 @@ namespace CapaPresentacion
         private void BCancelar_Click(object sender, EventArgs e)
 
         {
-            DialogResult ask = MessageBox.Show("Seguro que quiere cncelar el unucui de Session?:" 
+            
+            DialogResult ask = MessageBox.Show("Seguro que quiere cancelar el menu de Session?:" 
            , "Confirmar Cancelar", 
                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
-            this.Close();   
-        }
+            if (ask==DialogResult.Yes)
+            {
+                this.Close();
+            }
+          }
 
         private void BIngresar_Click(object sender, EventArgs e)
         {
