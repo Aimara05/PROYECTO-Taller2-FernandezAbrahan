@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CapaPresentacion
+{
+    public partial class Login : Form
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void BCancelar_Click(object sender, EventArgs e)
+
+        {
+            DialogResult ask = MessageBox.Show("Seguro que quiere cncelar el unucui de Session?:" 
+           , "Confirmar Cancelar", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            this.Close();   
+        }
+
+        private void BIngresar_Click(object sender, EventArgs e)
+        {
+            Inicio form = new Inicio(); //instancia
+            form.Show(); //se muestre el formulaario
+            this.Hide();    //que se oculte el login
+
+            form.FormClosing += frm_clossing; //cuando estamos cerrando el formulario tome el evento
+        }
+
+        private void frm_clossing(object sender, FormClosingEventArgs e) //recibe un obj y un evento
+        {
+            {
+                TBUsuario.Clear();
+                TBContraseña.Clear();   
+                this.Show(); //muestra el formulario login que se oculto
+
+            } }
+
+
+    }
+}
