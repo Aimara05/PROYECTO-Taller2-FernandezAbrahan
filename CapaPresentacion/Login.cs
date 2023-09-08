@@ -32,12 +32,20 @@ namespace CapaPresentacion
 
         private void BIngresar_Click(object sender, EventArgs e)
         {
-            Inicio form = new Inicio(); //instancia
-            form.Show(); //se muestre el formulaario
-            this.Hide();    //que se oculte el login
 
-            form.FormClosing += frm_clossing; //cuando estamos cerrando el formulario tome el evento
-        }
+            if (string.IsNullOrWhiteSpace(TBUsuario.Text) || string.IsNullOrWhiteSpace(TBContraseña.Text)) // para validar valores null y espacios vacíos.
+            {
+                MessageBox.Show("Debe completar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Inicio form = new Inicio(); //instancia
+                form.Show(); //se muestre el formulaario
+                this.Hide();    //que se oculte el login
+
+                form.FormClosing += frm_clossing; //cuando estamos cerrando el formulario tome el evento
+            }
+         }
 
         private void frm_clossing(object sender, FormClosingEventArgs e) //recibe un obj y un evento
         {

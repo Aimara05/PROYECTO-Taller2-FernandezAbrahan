@@ -44,3 +44,4 @@ C:\Users\Usuario\source\repos\Proyecto-Taller2-AbrahanUlises-FernandezAimara\Cap
 C:\Users\Usuario\source\repos\Proyecto-Taller2-AbrahanUlises-FernandezAimara\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\Usuario\source\repos\Proyecto-Taller2-AbrahanUlises-FernandezAimara\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
 C:\Users\Usuario\source\repos\Proyecto-Taller2-AbrahanUlises-FernandezAimara\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\Usuario\source\repos\Proyecto-Taller2-AbrahanUlises-FernandezAimara\CapaPresentacion\obj\Debug\CapaPresentacion.FormUsuarios.resources

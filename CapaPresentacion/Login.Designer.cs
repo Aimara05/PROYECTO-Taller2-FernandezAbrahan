@@ -132,9 +132,9 @@
             this.LUsuario.AutoSize = true;
             this.LUsuario.Location = new System.Drawing.Point(34, 67);
             this.LUsuario.Name = "LUsuario";
-            this.LUsuario.Size = new System.Drawing.Size(177, 20);
+            this.LUsuario.Size = new System.Drawing.Size(137, 20);
             this.LUsuario.TabIndex = 9;
-            this.LUsuario.Text = "Ingrese Usuario o Correo ";
+            this.LUsuario.Text = "Ingrese su  Usuario ";
             // 
             // pictureBox1
             // 
